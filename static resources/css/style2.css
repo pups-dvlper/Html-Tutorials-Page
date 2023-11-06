@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 55px; 
+    background-color: black;
+    
+}
+
+.logo{
+    color: white;
+    text-indent: 3rem;
+}
+
+.nav-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    width: 77%;
+    margin: 3px 15px;
+}
+
+.nav-menu{
+    display: flex;
+    padding-top: 9px;
+    margin: 0px 43px;
+}
+
+.nav-menu li{
+    height: 33px;
+    list-style: none;
+    padding: 14px 23px;
+}
+
+.nav-menu li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    padding: 3px 20px;
+    font-size: small;
+}
+
+.nav-menu li a:hover{
+    color: black;
+    background-color: white;
+}
+
+.nav-right{
+    margin: 15px 20px;
+}
+
+.nav-right input{
+    padding: 6px 5px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: rgb(250, 250, 250);
+}
+
+.btn-sm{
+    padding: 2px 8px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.356);
+    color: white;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+        
+
+        /* Style the main content */
+        .main {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        /* Style the sidebar */
+        .sidebar {
+            background-color: #eee;
+            margin-top: 1rem;
+            margin-bottom: 1.2rem;
+        }
+
+        /* Style the sidebar links */
+        .sidebar a {
+            display: block;
+            color: rgb(0, 0, 0,0.7);
+            text-decoration: none;
+            padding: 4px;
+            margin-bottom: 30px;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        /* Change the color of the sidebar links on hover */
+        .sidebar a:hover {
+            color: whitesmoke;
+            background-color: black;
+            transform: scale(1);
+            transition: 0.5s;
+            padding: 10px;
+        }
+
+        /* Style the article */
+        .article {
+            background-color: white;
+            padding: 10px;
+        }
+
+        /* Style the article title */
+        .article h1 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        /* Style the article image */
+        .img {
+            width: 25rem;
+            height: 15rem;
+            margin: 1rem 0rem 0rem 17rem;
+        }
+
+        /* Style the article content */
+        .article p {
+            margin-top: 2rem;
+            font-size: 15px;
+            line-height: 2rem;
+            letter-spacing: 0.5px;
+        }
+
+        /* Style the footer element */
+        footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3vw;
+    padding: 62px 8vw;
+    color: #e2e0e5;
+  }
+  .footer .h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  .footer .brand .h5 {
+    display: flex;
+    text-transform: none;
+    gap: 16px;
+  }
+  .footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .footer .brand {
+    max-width: 200px;
+    gap: 24px;
+    line-height: 1.5;
+  }
+  
+  .newsletter {
+    position: relative;
+  }
+  .newsletter input {
+    font-size: 16px;
+    font-weight: 400;
+    height: 53px;
+    padding: 6px 6px 6px 16px;
+    background: transparent;
+    border: 1px solid #e2e0e5;
+    color: #e2e0e5;
+    outline: none;
+    border-radius: 14px;
+    font-size: 16px;
+    width: 370px;
+  }
+  .newsletter button {
+    position: absolute;
+    padding: 16px 40px;
+    height: 53px;
+    border-radius: 10px;
+    border: none;
+    background-color: #e2e0e5;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    right: 6px;
+    top: 6px;
+    transition: all 0.5s;
+  }
+  .newsletter button:hover {
+    cursor: pointer;
+    border-radius: 70px 10px 70px 10px;
+    box-shadow: -10px 0px #e2e0e5;
+  }
+  
+  .social {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .social .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.21);
+    border-radius: 20% 20% 20% 20%;
+  }
+  .social a {
+    transition: all 0.3s ease;
+  }
+  .social a:hover {
+    box-shadow: 0px 0px 20px 1px #726193;
+    transform: scale(1.1);
+  }
+  
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 32px 8vw;
+    background-color: black;
+    color: #e2e0e5;
+  }
+  .copyright a {
+    color: #e2e0e5;
+    margin: 0 1vw 0 1vw;
+  }
+  .copyright a:last-child {
+    margin-right: 0;
+  }
+  .copyright a::before {
+    background-color: #e2e0e5 !important;
+  }
+  
+  p, a {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  a {
+    color: #e2e0e5;
+    text-decoration: none;
+  }
+  
+  footer a {
+    position: relative;
+  }
+  footer a:not(.social-icon)::before {
+    background-color: #e2e0e5;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-radius: 4px;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  footer a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  
+  @media (max-width: 960px) {
+    .footer {
+      gap: 72px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+    .footer .brand {
+      max-width: 400px !important;
+    }
+  
+    .subscribe {
+      display: block;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    .subscribe .newsletter {
+      width: 100%;
+      max-width: 370px;
+    }
+    .subscribe .newsletter input {
+      width: calc(100% - 22px);
+    }
+  
+    .copyright {
+      padding: 32px 5vw;
+    }
+    .copyright p,
+  .copyright a {
+      font-size: 14px;
+    }
+  
+    .footer {
+      padding: 72px 8vw;
+    }
+  }
+  @media (max-width: 360px) {
+    p,
+  a {
+      font-size: 14px;
+    }
+  
+    .footer .h5 {
+      font-size: 16px;
+    }
+  }
